@@ -24,3 +24,5 @@ yarn-error.log*
 
 crwn-clothing.iml
 .idea/*
+
+yarn.lock
