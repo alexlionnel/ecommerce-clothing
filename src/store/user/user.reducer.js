@@ -15,7 +15,6 @@ export const userReducer = (state = INITIAL_STATE, action) => { // NOSONAR
       };
     }
     default:
-      console.log('default');
       return state;
   }
 };
