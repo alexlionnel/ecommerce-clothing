@@ -11,6 +11,9 @@
 # production
 /build
 
+.env
+.netlify/edge-functions-import-map.json
+
 # misc
 .DS_Store
 .env.local
