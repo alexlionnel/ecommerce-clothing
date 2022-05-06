@@ -1,4 +1,3 @@
-import "./category.styles.scss";
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import ProductCard from "../../components/product-card/product-card.component";
