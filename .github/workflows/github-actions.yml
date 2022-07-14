@@ -55,12 +55,14 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         if: github.ref == 'refs/heads/main'
+        env:
+          VERSION_LABEL: crwn-clothing-web-${{ github.run_id }}
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-          application_name: cwrn-clothing
-          environment_name: Cwrnclothing-env
+          application_name: crwn-clothing
+          environment_name: Crwnclothing-env
           existing_bucket_name: elasticbeanstalk-us-east-1-593565753192
           region: us-east-1
-          version_label: ${{ github.run_number }}
+          version_label: ${{ env.VERSION_LABEL }}
           deployment_package: deploy.zip
