@@ -64,5 +64,5 @@ jobs:
           environment_name: Crwnclothing-env
           existing_bucket_name: elasticbeanstalk-us-east-1-593565753192
           region: us-east-1
-          version_label: ${{ env.VERSION_LABEL }}
+          version_label: Sample Application
           deployment_package: deploy.zip
