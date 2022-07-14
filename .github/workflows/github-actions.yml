@@ -62,6 +62,5 @@ jobs:
           environment_name: Cwrnclothing-env
           existing_bucket_name: elasticbeanstalk-us-east-1-593565753192
           region: us-east-1
-          version_label: ${{ github.sha }}
+          version_label: ${{ github.run_number }}
           deployment_package: deploy.zip
-          use_existing_version_if_available: true
